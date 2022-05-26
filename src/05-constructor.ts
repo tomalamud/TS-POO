@@ -1,16 +1,9 @@
 export class MyDate {
-  private year: number;
-  private month: number;
-  private day: number;
   constructor(
-    year: number,
-    month: number,
-    day: number
-  ) {
-    this.year = year;
-    this.month = month;
-    this.day = day;
-  }
+    public year: number = 1999,
+    public month: number = 7,
+    public day: number = 9
+  ) {}
 
   printFormat(): string {
     const day = this.addPadding(this.day);
